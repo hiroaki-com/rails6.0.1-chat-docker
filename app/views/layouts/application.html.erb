@@ -11,8 +11,8 @@
 
   <body>
     <%= render 'shared/header' %>
-     <div class="container-fluid py-4 mw-md">
-      <%= yield %>
-     </div>
+      <div class="container-fluid py-4 <%= devise_controller? ? 'mw-md' : 'mw-xl' %>">
+        <%= yield %>
+      </div>
   </body>
 </html>
