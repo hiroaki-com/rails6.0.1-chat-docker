@@ -13,10 +13,19 @@
  *= require_tree .
  *= require_self
  */
-
-
  @import "bootstrap/scss/bootstrap";
 
+// ハンバーガーメニュー-----------------------
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0); // 枠線削除
+  outline: none;  // クリック時の枠線削除
+}
+//三本線の調整　cf　https://www.konnect-kollect.info/bootstrap4-hamburger-menu-customize.html https://knowledge.cpi.ad.jp/tech/buggermenu-edit/
+.navbar-toggler .navbar-toggler-icon { 
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+// -----------------------ハンバーガーメニュー//
 
 
 // メッセージ一覧
@@ -40,4 +49,12 @@
  // ***** 以下を追加 *****
  .mw-xl {
    max-width: 1200px;
+ }
+
+ 
+
+ //--- html.erbにスタイル指定をしている箇所のためのテスト場所----//
+ .color-test {
+  color:#007bff       ;
+  background: linear-gradient(#007bff63, #007bff)     ;
  }
