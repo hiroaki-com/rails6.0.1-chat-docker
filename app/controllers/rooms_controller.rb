@@ -1,7 +1,7 @@
 class RoomsController < ApplicationController
   def show
-    # 投稿一覧表示に利用。最新の55件のみ取得する。
-    @messages = Message.includes(:user).order(:id).last(55)
+    # 投稿一覧表示に利用。最新の20件のみ取得する。
+    @messages = Message.includes(:user).order(:id).last(20)
     # メッセージ投稿に利用
     @message = current_user.messages.build
   end
