@@ -57,10 +57,10 @@
 
  
 
- //--- html.erbにスタイル指定をしている箇所のためのテスト場所----//
+ //--- html.erbにスタイル指定をしている箇所のためのテスト場所----------------------------------//
  .color-test {
   color:#007bff       ;
-  background: linear-gradient(#007bff63, #007bff63)     ;
+  background: linear-gradient(rgba(0, 0, 0, 0.211), rgba(0, 0, 0, 0.615))     ;
  }
 
  // ボタン無効化時のスタイル
