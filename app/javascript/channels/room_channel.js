@@ -99,24 +99,22 @@ document.addEventListener('turbolinks:load', () => {
         footerHeight = newFooterHeight
     }
 
-    // ********** 以下を追加 **********
-    let oldestMessageId
-    // メッセージの追加読み込みの可否を決定する変数
-    window.showAdditionally = true
+  let oldestMessageId
+  // メッセージの追加読み込みを可否を決定する変数
+  window.showAdditionally = true
 
-    window.addEventListener('scroll', () => {
-        if (documentElement.scrollTop === 0 && showAdditionally) {
-            showAdditionally = false
-            // 表示済みのメッセージの内，最も古いidを取得
-            oldestMessageId = document.getElementsByClassName('message')[0].id.replace(/[^0-9]/g, '')
-            // Ajax を利用してメッセージの追加読み込みリクエストを送る。最も古いメッセージidも送信しておく。
-            $.ajax({
-                type: 'GET',
-                url: '/show_additionally',
-                cache: false,
-                data: {oldest_message_id: oldestMessageId, remote: true}
-            })
-        }
-    }, {passive: true});
-    // ********** 以上を追加 **********
+  window.addEventListener('scroll', () => {
+    if (documentElement.scrollTop === 0 && showAdditionally) {
+      showAdditionally = false
+      // 表示済みのメッセージの内，最も古いidを取得
+      oldestMessageId = document.getElementsByClassName('message')[0].id.replace(/[^0-9]/g, '')
+      // Ajax を利用してメッセージの追加読み込みリクエストを送る。最も古いメッセージidも送信しておく。
+      $.ajax({
+        type: 'GET',
+        url: '/show_additionally',
+        cache: false,
+        data: {oldest_message_id: oldestMessageId, remote: true}
+      })
+    }
+  }, {passive: true});
 })
