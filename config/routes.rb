@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root 'rooms#show'
   # 次の一行を追加
   resources :messages, only: :create
+  get '/show_additionally', to: 'rooms#show_additionally'
 end
