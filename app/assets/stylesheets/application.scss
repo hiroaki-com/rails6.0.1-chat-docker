@@ -50,18 +50,11 @@
  .mw-md {
    max-width: 576px;
  }
- // ***** 以下を追加 *****
  .mw-xl {
    max-width: 1200px;
  }
 
- 
 
- //--- html.erbにスタイル指定をしている箇所のためのテスト場所----------------------------------//
- .color-test {
-  color:#007bff       ;
-  background: linear-gradient(rgba(0, 0, 0, 0.211), rgba(0, 0, 0, 0.615))     ;
- }
 
  // ボタン無効化時のスタイル
 .btn-primary.disabled {
@@ -74,3 +67,11 @@
 #message_content {
   resize: none;
 }
+
+
+//--- html.erbにスタイル指定をしている箇所のためのテスト場所----------------------------------//
+.color-test {
+  color:#0303039b       ;
+  background: linear-gradient(rgba(0, 0, 0, 0.519), rgb(0, 0, 0))     ;
+ }
+ //--- html.erbにスタイル指定をしている箇所のためのテスト場所----------------------------------//

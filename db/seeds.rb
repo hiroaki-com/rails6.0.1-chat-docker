@@ -1,5 +1,5 @@
 # 作成するユーザー・メッセージの個数
-user_count = 3
+user_count = 5
 message_count = 1000
 
 ApplicationRecord.transaction do
@@ -16,8 +16,7 @@ ApplicationRecord.transaction do
   message_list = []
   message_count.times do |n|
     user_id = user_ids.sample
-    line_count = rand(1..4)
-    # Fakerで１〜４行のランダムメッセージを作成
+    line_count = rand(1..3) # Fakerで１〜3行のランダムメッセージを作成
     content = Faker::Lorem.paragraphs(number: line_count).join("\n")
     message_list << { user_id: user_id, content: content }
   end
