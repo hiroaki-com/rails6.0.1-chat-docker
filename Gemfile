@@ -57,3 +57,6 @@ gem 'devise-bootstrap-views', '~> 1.0'
 
 # こちらもお好みです。動作確認用のランダムメッセージを入れるために使用します
 gem 'faker'
+
+# admin add  https://qiita.com/tmasuyama/items/cf862d1d8dce2e381c54
+gem 'rails_admin', '~> 2.0.0.beta'
