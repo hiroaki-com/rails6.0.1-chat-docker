@@ -41,9 +41,14 @@
 
  // メッセージ欄内の簡易デザイン
  .message {
-   border: 2px solid rgba(128, 128, 128, 0.375);
+   border-width: 1px 0 0;
+   border-style: solid;
+   border-color: #6c757d;
    margin-top: 1px;
    padding: 5px;
+   p {
+     font-size: 0.8em ;
+   }
  }
  
  // メッセージ投稿フォーム
@@ -76,9 +81,4 @@
 }
 
 
-//--- html.erbにスタイル指定をしている箇所のためのテスト場所----------------------------------//
-.color-test {
-  color:#0303039b       ;
-  background: linear-gradient(rgba(0, 0, 0, 0.519), rgb(0, 0, 0))     ;
- }
- //--- html.erbにスタイル指定をしている箇所のためのテスト場所----------------------------------//
+
