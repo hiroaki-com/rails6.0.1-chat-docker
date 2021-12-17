@@ -1,6 +1,7 @@
 # README
 
 リアルタイムチャットアプリ
+responsive design supported
 
 macOS BigSur '11.6.1'
   
