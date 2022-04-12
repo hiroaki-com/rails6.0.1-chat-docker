@@ -1,11 +1,12 @@
-# README
+## リアルタイムチャットアプリ
 
-リアルタイムチャットアプリ
+#### URL
+https://chat-rails6-on-docker.herokuapp.com/
 
-responsive design supported
+-> `ゲストログインボタン`よりご覧になれます。
 
-macOS BigSur '11.6.1'
-  
+#### 活用技術
+```
 docker-compose '3'
 
 ruby '2.6.4'
@@ -14,11 +15,13 @@ rails '6.0.4.1'
   
 postgres '1.2.3'
   
-scss 
+scss
   
 bootstrap
-  
+
 javascript
-  
+
+responsive design supported
+
 heroku
-  
+```  
