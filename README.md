@@ -1,4 +1,4 @@
-## リアルタイムチャットアプリ
+## チャットアプリ - Real-Time Chat Application -
 
 #### URL
 https://chat-rails6-on-docker.herokuapp.com/
