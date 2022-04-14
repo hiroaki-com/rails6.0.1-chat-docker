@@ -26,7 +26,7 @@ bootstrap
 
 javascript
 
-responsive design supported
+ーresponsive design supported
 
 heroku
 ```  
